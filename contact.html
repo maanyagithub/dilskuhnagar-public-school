@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <center>
+  <title>Dilushukhnagar Public School Website</title>
+
+  <h1>Dilsukhnagar Public School</h1>
+
+<h3>  V1: Dilushukhnagar md1:sarror nagar  dist: Ranga Reddy ,5058</h3>
+  <hr>
+  <h3>
+    <a href="index.html">home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+  <a href="about.html">about us </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="services.html">services</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="buses.html">buses</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="fee.html">fee details</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="contact.html">contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h3/>
+  <hr>
+</center>
+<address>
+
+
+Address:<br>
+
+Diluskhnagar Public School <br>
+Vil: Karmanghat <br>
+Mdl: Sarror Nagar <br>
+Dst : Ranga Reddy <br>
+Pincode:50079, <br>
+Email:hr@school.com <br>
+Call:09849445099
+</address>
+
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.429434226603!2d78.52778031373845!3d17.343057108649624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb988362c2a7dd%3A0x17b9510d0dd01350!2sDilsukhnagar%20Public%20School!5e0!3m2!1sen!2sin!4v1648193660736!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+<hr>
+technical website
+<hr>
+
+
+<h1>technical website</h1>
+
+<h3>java data base connection code</h3>
+
+
+<pre>
+import java.sql.*;
+
+public class FirstExample {
+   static final String DB_URL = "jdbc:mysql://localhost/TUTORIALSPOINT";
+   static final String USER = "guest";
+   static final String PASS = "guest123";
+   static final String QUERY = "SELECT id, first, last, age FROM Employees";
+
+   public static void main(String[] args) {
+      // Open a connection
+      try(Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
+         Statement stmt = conn.createStatement();
+         ResultSet rs = stmt.executeQuery(QUERY);) {
+         // Extract data from result set
+         while (rs.next()) {
+            // Retrieve by column name
+            System.out.print("ID: " + rs.getInt("id"));
+            System.out.print(", Age: " + rs.getInt("age"));
+            System.out.print(", First: " + rs.getString("first"));
+            System.out.println(", Last: " + rs.getString("last"));
+         }
+      } catch (SQLException e) {
+         e.printStackTrace();
+      }
+   }
+}
+
+</pre>
+
+<script type="text/javascript" src="https://form.jotform.com/jsform/220811312414440"></script>
+</body>
+</html>
